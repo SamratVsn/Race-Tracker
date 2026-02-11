@@ -42,11 +42,11 @@ import kotlinx.coroutines.launch
 @Composable
 fun RaceTrackerApp(){
     val playerOne = remember{
-        RaceParticipant("Player 1", progressIncrement = 1)
+        RaceParticipant("Player 1", progressIncrement = 5)
     }
 
     val playerTwo = remember {
-        RaceParticipant("Player 2", progressIncrement = 2)
+        RaceParticipant("Player 2", progressIncrement = 10)
     }
 
     var raceInProgress by remember { mutableStateOf(false) }
